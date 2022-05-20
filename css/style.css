@@ -1,3 +1,16 @@
 header{
     
 }
+
+.slider{
+    background-color: #2F303A;
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
