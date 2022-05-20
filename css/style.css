@@ -1,5 +1,19 @@
-header{
-    
+body{
+    background-color: #F5F4FA;
+    color: #000;
+}
+h3 span{
+color: #2196f3;
+}
+header h3{color: #000;}
+footer h3 {
+    color: #fff;
+}
+
+header a, header ul, header li {
+   text-decoration: none;
+   list-style: none;
+   display: inline;
 }
 
 .slider{
@@ -14,3 +28,39 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
+.slider>[type="button"]{
+    color: #fff;
+    background-color: #2196f3;
+    width: 200px;
+    height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+      
+}
+
+.text li{
+    width: 270px;
+    height: 75px;
+    display: inline-block;
+    text-align: left;
+}
+
+.our-job li{
+    display: inline-block;
+    
+}
+.our-team li{
+    display: inline-block;
+}
+
+footer{
+    width: 1600px;
+    height: 252px;
+    background-color: #2F303A;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 60%)
+}
+
+address{color:#fff;}
