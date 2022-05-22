@@ -1,67 +1,207 @@
-body{
-    background-color: #F5F4FA;
-    color: #000;
-}
-h3 span{
-color: #2196f3;
-}
-header h3{color: #000;}
-footer h3 {
-    color: #fff;
+:root {
+    --text-color: #000;
+    --slider-backgroud-color: #2F303A;
+    --body-bg-color: #F5F4FA;
+    --logo-color: #2196F3;
+    --slider-text-color: #fff;
+    --header-color: #fff;
+    --footer-bg-color: #2F303A;
+    --logo-footer-color: #fff;
+    --nav-text-color: #212121;
+    --links-color-hover: #2196F3;
+    --header-contacts-color:#757575;
+    --button-color: #F5F4FA;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --our-team-text-color: #757575;
+    --article-text-color: #757575;
+    --portfolio-bg-color: #fff;
+    --portfolio-article-heading-color: #212121;
+    --portfolio-article-text-color: #757575;
 }
 
-header a, header ul, header li {
-   text-decoration: none;
-   list-style: none;
-   display: inline;
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: Roboto, Relaway, sans-serif;
+    
 }
+
 
 .slider{
-    background-color: #2F303A;
+    background-color: var(--slider-backgroud-color);
     text-align: center;
     width: 1600px;
     height: 600px;
 }
-h1{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
+
 .slider>[type="button"]{
-    color: #fff;
-    background-color: #2196f3;
+    background-color: var(--button-color);
     width: 200px;
     height: 50px;
         font-weight: 700;
         font-size: 16px;
+        line-height: 1.87;
         cursor: pointer;
-      
+        border: none;
+}
+[type="button"]:hover, [type="button"]:focus{
+    background-color: var(--links-color-hover);
+    color: var(--logo-footer-color);
+}
+.links{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
-.text li{
+.poems{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;    
+}
+.text-list{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
     width: 270px;
     height: 75px;
+    text-align: left;
+}
+.logo{
+    font-family: Relaway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+}
+.logo-color{
+    color: var(--logo-color);
+}
+.slider-text{
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--slider-text-color);
+    text-transform: uppercase;
+}
+
+.head-header{
+    text-align: left;
+    width: 1600px;
+    height: 80px;
+    background-color:var(--header-color) ;
     display: inline-block;
+}
+.nav-text{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--nav-text-color);
+}
+.nav-text .links:hover, .nav-text .links:focus {
+    color: var(--links-color-hover);
+}
+
+.header-contacts {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--header-contacts-color);
+    text-decoration: none;
+    display: inline;
+}
+
+.header-contacts:hover, .header-contacts:focus, .footer-contacts:hover, .footer-contacts:focus{
+    color: var(--links-color-hover);
+}
+.footer-set{
+    width: 1600px;
+    height: 252px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--footer-bg-color) ;
+    color: var(--logo-footer-color);
+    
+}
+
+
+.footer-contacts{
+ list-style: none;
+ text-decoration: none;
+ color: var(--footer-contacts-color);
+
+}
+
+.heading-text{
+ font-family: Roboto , sans-serif;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.16;
+ text-align: center;
+}
+.our-team-heading{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.84;
+}
+.our-team-text{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.84;
+    color: var(--our-team-text-color);
+}
+.article-heading{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+}
+.article-text{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--article-text-color);
     text-align: left;
 }
 
-.our-job li{
-    display: inline-block;
-    
+[type="button"]{
+    text-align: center;
+    background-color: var(--button-color);
+    width: 93px;
+    height: 38px;
+    font-weight:500;
+    font-size:16px;
+    line-height:1.62;
+    cursor: pointer;
+    border: none;
 }
-.our-team li{
-    display: inline-block;
-}
-
-footer{
-    width: 1600px;
-    height: 252px;
-    background-color: #2F303A;
-}
-footer a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 60%)
+.portfolio-bg-color{
+    background-color:var(--portfolio-bg-color);
 }
 
-address{color:#fff;}
+.portfolio-article-heading{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color:var(--portfolio-article-heading-color) ;
+}
+
+.portfolio-article-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--portfolio-article-text-color); 
+}
